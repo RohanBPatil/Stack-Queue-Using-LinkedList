@@ -8,7 +8,7 @@ public class MyQueue<k> {
 	}
 
 	/**
-	 * UC 1 enqueue method will add node to back of queue
+	 * UC 1 enqueue method adds node to back of queue
 	 * 
 	 * @param node
 	 * @return
@@ -19,5 +19,14 @@ public class MyQueue<k> {
 
 	public void printQueue() {
 		myLinkedList.print();
+	}
+
+	/**
+	 * UC 4 dequeue method removes first node of queue
+	 * 
+	 * @return
+	 */
+	public INode<k> dequeue() {
+		return myLinkedList.pop();
 	}
 }
