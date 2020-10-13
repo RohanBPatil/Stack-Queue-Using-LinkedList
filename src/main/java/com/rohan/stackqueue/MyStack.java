@@ -22,4 +22,22 @@ public class MyStack<k> {
 	public void printStack() {
 		myLinkedList.print();
 	}
+
+	/**
+	 * UC 2 returns top node of stack
+	 * 
+	 * @return
+	 */
+	public INode<k> peek() {
+		return myLinkedList.head;
+	}
+
+	/**
+	 * UC2 removes top element of stack and returns it
+	 * 
+	 * @return
+	 */
+	public INode<k> pop() {
+		return myLinkedList.pop();
+	}
 }
